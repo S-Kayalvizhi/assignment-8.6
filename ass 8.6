@@ -1,0 +1,16 @@
+1.Find the top five kinds of GoogleKnowlege_Occupation people who were guests in the show, in a particular time period 
+i.e., between '1/11/99' and 6/11/99. You need to write an UDF to compare the dates.
+
+Udf 
+Used  Date to filter date  between '1/11/99' and 6/11/99 by using date.after and date.before function
+
+Pig Steps:
+
+Step 1:REGISTERING UDF
+Step2:Generating google knowledge column and used tdate(date column);
+Step3:filter it for not null  condition 
+Step4:made  group by google knowledge occupation
+Step5:made count 
+Step6:order by count desc
+Step7:made limit of 5
+
